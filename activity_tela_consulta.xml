@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TelaConsulta">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="8dp">
+
+        <TextView
+            android:id="@+id/tv_titulo_consulta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/consultar"
+            android:textAlignment="center"
+            android:textSize="34sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="8dp">
+
+            <TextView
+                android:id="@+id/tv_nome_consulta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/nome" />
+
+            <EditText
+                android:id="@+id/et_nome_consulta"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="25"
+                android:hint="@string/nome"
+                android:importantForAutofill="no"
+                android:inputType="textPersonName"
+                android:minHeight="48dp"
+                android:textColorHint="#757575"
+                 />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="8dp">
+
+            <TextView
+                android:id="@+id/tv_telefone_consulta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/telefone" />
+
+            <EditText
+                android:id="@+id/et_telefone_consulta"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="11"
+                android:hint="@string/telefone"
+                android:importantForAutofill="no"
+                android:inputType="phone"
+                android:minHeight="48dp"
+                android:textColorHint="#757575"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="8dp"
+            android:padding="2dp">
+
+            <Button
+                android:id="@+id/btn_anterior_consulta"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/anterior"
+                android:layout_margin="8dp"
+                tools:ignore="ButtonStyle" />
+
+            <Button
+                android:id="@+id/btn_proximo_consulta"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/proximo"
+                android:layout_margin="8dp"
+                tools:ignore="ButtonStyle" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_voltar_consulta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/voltar"
+            android:layout_margin="8dp"/>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
